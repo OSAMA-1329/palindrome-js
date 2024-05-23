@@ -64,28 +64,45 @@
       // while(true){
       //   let num = Number(prompt("Enter a Number"));
 
-      //   if (!isNaN(num)) break; 
+      //   if (!isNaN(num)) break;
       // }
 
+      console.log("continue demo");
 
-
-      console.log("continue demo")
-
-      for (i=1;i<=10;i++){
-
-        if(i%3==0)
-        continue;
-console.log(i)
+      for (i = 1; i <= 10; i++) {
+        if (i % 3 == 0) continue;
+        console.log(i);
       }
 
-      console.log("Array of for of")
+      console.log("Array of for of");
 
-      let arr=['apple','orange','mango','avacoda']
+      let arr = ["apple", "orange", "mango", "avacoda"];
 
-      for(i=0;i<arr.length;i++)
-      {
-        console.log(arr[i].toUpperCase())
+      for (i = 0; i < arr.length; i++) {
+        console.log(arr[i].toUpperCase());
       }
+
+      console.log("for of in array");
+
+      for (let fruit of arr) console.log(fruit);
+
+      console.log("for in array");
+
+      item = {
+        name: "phone",
+        price: 1000,
+        qty: 5,
+      };
+
+      
+      for (let key in item) 
+
+      // if we want to need key use by below syntax
+      // console.log(key)
+
+      // if we want to need value use by below syntax
+      console.log(item[key]);
+
 
 
     </script>
