@@ -10,3 +10,6 @@ function isPalindrome(str){
 }
 
 console.log(isPalindrome*("A man"))
+
+
+console.log("for loop")
