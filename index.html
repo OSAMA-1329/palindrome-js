@@ -8,13 +8,13 @@
   <body>
     <h1>Check Palindrome</h1>
 
-    <input  id="inputString" placeholder="Enter a string">
-    <button onclick="checkPalindrome()"> it Palindrome?</button>
+    <input id="inputString" placeholder="Enter a string" />
+    <button onclick="checkPalindrome()">it Palindrome?</button>
     <p id="result"></p>
 
     <script>
       function isPalindrome(str) {
-        let normalizedStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+        let normalizedStr = str.toLowerCase().replace(/[^a-z0-9]/g, "");
         return normalizedStr === normalizedStr.split("").reverse().join("");
       }
       function checkPalindrome() {
@@ -28,38 +28,44 @@
         }
       }
 
-    //   function isPalindrome(str) {
-    //       let normalizedStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
-    //       return normalizedStr === normalizedStr.split('').reverse().join('');
-    //   }
+      //   function isPalindrome(str) {
+      //       let normalizedStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+      //       return normalizedStr === normalizedStr.split('').reverse().join('');
+      //   }
 
-    //   function checkPalindrome() {
-    //       let inputString = document.getElementById("inputString").value;
-    //       let resultElement = document.getElementById("result");
+      //   function checkPalindrome() {
+      //       let inputString = document.getElementById("inputString").value;
+      //       let resultElement = document.getElementById("result");
 
-    //       if (isPalindrome(inputString)) {
-    //           resultElement.textContent = `"${inputString}" is a palindrome.`;
-    //       } else {
-    //           resultElement.textContent = `"${inputString}" is not a palindrome.`;
-    //       }
-    //   }
+      //       if (isPalindrome(inputString)) {
+      //           resultElement.textContent = `"${inputString}" is a palindrome.`;
+      //       } else {
+      //           resultElement.textContent = `"${inputString}" is not a palindrome.`;
+      //       }
+      //   }
 
+      console.log("for loop");
 
-    console.log("for loop")
+      for (let i = 1; i <= 5; i++) {
+        console.log("hello");
+      }
+      for (let i = 2; i <= 5; i++) {
+        console.log(i);
+      }
 
-    for(let i=1;i<=5;i++){
-        console.log("hello")
-      
+      console.log("while");
 
-    };
-    for(let i=2;i<=5;i++){
+      i = 10;
+      while (i >= 1) {
+        console.log(i);
+        i--;
+      }
 
-      console.log(i)
-    }
+      // while(true){
+      //   let num = Number(prompt("Enter a Number"));
 
-
-
-    
+      //   if (!isNaN(num)) break;
+      // }
     </script>
   </body>
-</html> 
+</html>
